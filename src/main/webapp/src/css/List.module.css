@@ -1,0 +1,31 @@
+table {
+	border-collapse: collapse;
+}
+th, td {
+	padding: 5px;
+	width: 200px;
+}
+
+#currentPaging {
+	border: 1px solid #ccc;
+	margin: 5px;
+	padding: 5px 8px;
+	color: red;
+	cursor: pointer;
+}
+#paging {
+	color: black;
+	margin: 5px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+#paging:link { color: black; text-decoration: none;}
+#paging:visited { color: black; text-decoration: none;}
+#paging:hover { color: black; text-decoration: underline;}
+#paging:active { color: black; text-decoration: none;}
+
+.subjectA:link { color: black; text-decoration: none;}
+.subjectA:visited { color: black; text-decoration: none;}
+.subjectA:hover { color: red; text-decoration: underline;}
+.subjectA:active { color: black; text-decoration: none;}

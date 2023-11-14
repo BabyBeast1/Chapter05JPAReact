@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a4bb2bf7.css",
+    "main.js": "/static/js/main.ee2c9829.js",
+    "static/js/787.994511a4.chunk.js": "/static/js/787.994511a4.chunk.js",
+    "static/media/망상토끼.gif": "/static/media/망상토끼.e9be0a488300a86278f7.gif",
+    "index.html": "/index.html",
+    "main.a4bb2bf7.css.map": "/static/css/main.a4bb2bf7.css.map",
+    "main.ee2c9829.js.map": "/static/js/main.ee2c9829.js.map",
+    "787.994511a4.chunk.js.map": "/static/js/787.994511a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4bb2bf7.css",
+    "static/js/main.ee2c9829.js"
+  ]
+}
