@@ -15,10 +15,9 @@ const UploadForm = () => {
         imageFileName: '',
         imageOriginalName: ''
     })
-    const { imageName, imageContent, imageFileName, imageOriginalName } = userUploadDTO
+    const { imageName, imageContent } = userUploadDTO
 
     const [imgList, setImgList] = useState([])
-    const [file, setFile] = useState('')
     const [files, setFiles] = useState('')
 
     const navigate = useNavigate()
@@ -43,6 +42,10 @@ const UploadForm = () => {
         imgFiles.map(item => {
             const objectURL = URL.createObjectURL(item)
             imgArray.push(objectURL)
+
+            //map 함수는 배열을 변환하는데, 값을 반환하지 않을 경우 undefined를 반환한다.
+            //따라서 명시적으로 값을 반환하도록 수정해야 한다.
+            return null;
         })
 
         setImgList(imgArray) //카메라 아이콘을 누르면 이미지 미리보기 용도
@@ -131,7 +134,8 @@ const UploadForm = () => {
                                         // 선택한 이미지를 미리보기
                                         imgList.map((item, index) => <img key={ index } 
                                                                           src={ item } 
-                                                                          style={{ width: '100px', height: '100px' }} />)
+                                                                          style={{ width: '100px', height: '100px' }} 
+                                                                          alt='' />)
                                     }
                                 </span>
 

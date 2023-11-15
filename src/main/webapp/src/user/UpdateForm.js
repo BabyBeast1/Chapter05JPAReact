@@ -10,7 +10,7 @@ const UpdateForm = () => {
 
     const [userDTO, setUserDTO] = useState({
         name: '',
-        id: '',
+        id: userId,
         pwd: ''
     }) 
     const { name, id, pwd } = userDTO
@@ -72,7 +72,7 @@ const UpdateForm = () => {
         axios.get(`/user/getUser?id=${userId}`)
              .then(res => setUserDTO(res.data))
              .catch(error => console.log(error))
-    }, [reset])
+    }, [reset, userId])
 
     return (
         <div>
@@ -96,7 +96,7 @@ const UpdateForm = () => {
                     <tr>
                         <th>아이디</th>
                         <td>
-                            <input type='text' name='id' value={ userId } readOnly />
+                            <input type='text' name='id' value={ id } readOnly />
                         </td>
                     </tr>
 

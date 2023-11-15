@@ -42,7 +42,7 @@ const List = () => {
             })
             .catch(error => console.log(error))
 
-                }, [page, searchList])
+                }, [page, searchList, columnName, keyword])
 
         const onSearchList = (e) => {
 
