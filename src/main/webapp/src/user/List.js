@@ -23,7 +23,7 @@ const List = () => {
                     setList(res.data.content)
                     console.log(res.data)
                     setPagingArray(Array.from({ length: res.data.totalPages }, (_, index) => index + 1))
-                    console.log('pagingArray = ' + pagingArray)
+                    // console.log('pagingArray = ' + pagingArray)
                 })
                 .catch(error => console.log(error))
                 

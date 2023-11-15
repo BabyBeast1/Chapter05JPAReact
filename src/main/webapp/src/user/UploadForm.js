@@ -63,6 +63,7 @@ const UploadForm = () => {
         // }    // 아래 오브젝트와 같은 성능을 가짐
         Object.values(files).map((item, index) => {
             formData.append('img', item)
+            return null;
         })
 
         axios.post('/user/upload', formData, {
