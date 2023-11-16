@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Index = () => {
     return (
         <div>
-            <h3>*** 메인 화면 - 2 ***</h3>
+            <h3>*** 메인 화면 ^.^ ***</h3>
             <hr />
             <h4>
             <p><Link to='/user/writeForm'>입력</Link></p>
